@@ -113,13 +113,27 @@
             </li>
 
             <!-- Toggle switch -->
-            <div class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
-              </label>
-            </div>
+           <div class="theme-switch">
+  <label class="theme-switch">
+    <input type="checkbox" class="theme-switch__checkbox" id="theme-toggle" />
+    <div class="theme-switch__container">
+      <div class="theme-switch__clouds"></div>
+      <div class="theme-switch__stars-container">
+        <!-- Your SVG stars here -->
+      </div>
+      <div class="theme-switch__circle-container">
+        <div class="theme-switch__sun-moon-container">
+          <div class="theme-switch__moon">
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+
             <!-- Hamburger menu -->
           </ul>
           <div class="hamburger">
@@ -294,8 +308,8 @@
         <div href="" class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3> Two</h3>
-              <p>React, Redux, SASS</p>
+              <h3> The Office</h3>
+              <p>React JS, Tailwind CSS, SASS</p>
             </div>
 
             <div class="project-link">
@@ -381,8 +395,8 @@
         <br><br>
         <img class="profile-image" src="assets/profile-image11.svg" alt="Profile image" />
         <p>Get in touch with me</p>
-        <br>
-         <!-- Social links -->
+     
+         <!-- Social links
          <div class="social">
           <a href="https://www.linkedin.com/in/sushantpatil" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
@@ -396,11 +410,11 @@
           <a href="https://www.instagram.com/sushantpatil" target="_blank">
             <i class="fa-brands fa-instagram"></i>
           </a>
-        </div>
+        </div> -->
         
-        <p class="footer-message">Let's connect and create something awesome together!</p>
+        <!-- <p class="footer-message">Let's connect and create something awesome together!</p>
         
-    
+     -->
       <form action="" method="post" class="contact-form">
         <div class="form-group">
           <input type="text" name="name" placeholder="Name" required />
@@ -411,10 +425,33 @@
         <div class="form-group">
           <textarea name="message" rows="5" placeholder="Message"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
     
       <style>
+        /* From Uiverse.io by adamgiebl */ 
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 600;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
         .social {
   display: flex;
   justify-content: center;
